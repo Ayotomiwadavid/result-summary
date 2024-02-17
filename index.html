@@ -1,18 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./output.css">
+  <script src="https://cdn.tailwindcss.com"></script>
   <title>fronted mentor challange</title>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'Light-red': 'hsl(0, 100%, 67%)',
+            'Light-red-light': 'hsla(0, 100%, 67%, .23)',
+            'Orangey-yellow': 'hsl(39, 100%, 56%)',
+            'Orangey-yellow-alpha': 'hsla(39, 100%, 56%, .2)',
+            'Green-teal': 'hsl(166, 100%, 37%)',
+            'Green-teal-alpha': 'hsla(166, 100%, 37%, .2)',
+            'Cobalt-blue': 'hsl(234, 85%, 45%)',
+            'Cobalt-blue-alpha': 'hsla(234, 85%, 45%, .2)',
+            'Light-slate-blue': 'hsl(252, 100%, 67%)',
+            'Light-royal-blue': 'hsl(241, 81%, 54%)',
+            'Violet-blue': 'hsla(256, 72%, 46%, 1)',
+            'Persian-blue': 'hsla(241, 72%, 46%, 0)',
+            'White': 'hsl(0, 0%, 100%)',
+            'Pale-blue': 'hsl(221, 100%, 96%)',
+            'Light-lavender': 'hsl(241, 100%, 89%)',
+            'Dark-gray-blue': 'hsl(224, 30%, 27%)',
+          }
+        }
+      }
+    }
+  </script>
 </head>
+
 <body class="bg-Pale-blue flex justify-center items-center h-svh font-hanken">
   <div class=" bg-white w-[600px] h-[350] rounded-3xl flex">
-    <aside class=" py-8 px-4 bg-gradient-to-b from-Light-royal-blue to-Light-slate-blue  w-1/2 rounded-3xl flex flex-col justify-between items-center gap-4">
+    <aside
+      class=" py-8 px-4 bg-gradient-to-b from-Light-royal-blue to-Light-slate-blue  w-1/2 rounded-3xl flex flex-col justify-between items-center gap-4">
       <div class="text-lg text-Pale-blue font-bold">
         Your result
       </div>
-      <div class=" gap-2 w-44 h-44 rounded-full flex flex-col items-center justify-center text-white bg-gradient-to-b from-violet-blue to-Light-slate-blue">
+      <div
+        class=" gap-2 w-44 h-44 rounded-full flex flex-col items-center justify-center text-white bg-gradient-to-b from-violet-blue to-Light-slate-blue">
         <span class="text-7xl font-bold">
           76
         </span>
@@ -20,7 +50,8 @@
       </div>
       <div class="flex flex-col gap-2 text-center w-[200px]">
         <div class="text-white text-lg font-bold">Great</div>
-        <div class="text-Pale-blue text-center text-xs">Your scored higher than 65% of the people who have taken this test</div>
+        <div class="text-Pale-blue text-center text-xs">Your scored higher than 65% of the people who have taken this
+          test</div>
       </div>
     </aside>
     <div class="px-4 py-8 flex flex-col w-1/2 justify-between">
@@ -59,4 +90,5 @@
     </div>
   </div>
 </body>
+
 </html>
